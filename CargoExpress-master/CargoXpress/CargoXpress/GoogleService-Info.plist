@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>965262337219-i3fflkfio2kj6j3442ve683348q7qr73.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.965262337219-i3fflkfio2kj6j3442ve683348q7qr73</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>965262337219-kf7hb0iesrijbbmnnsbutqe1e8265vpr.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAqe5CuLUh017XP_OmWda-F-W4cWANv13c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>965262337219</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.main.aurora</string>
+	<key>PROJECT_ID</key>
+	<string>cargoxpress-e2a8c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cargoxpress-e2a8c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:965262337219:ios:597177e2b9c83753a72e76</string>
+	<key>DATABASE_URL</key>
+	<string>https://cargoxpress-e2a8c.firebaseio.com</string>
+</dict>
+</plist>

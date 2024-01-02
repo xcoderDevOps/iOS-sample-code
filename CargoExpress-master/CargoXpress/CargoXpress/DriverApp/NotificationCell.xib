@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="56" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="CargoXpress" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHD-8I-DsV" customClass="LetsView" customModule="CargoXpress" customModuleProvider="target">
+                        <rect key="frame" x="12" y="12" width="8" height="8"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="cpA-fk-0kP"/>
+                            <constraint firstAttribute="height" constant="8" id="pRg-R3-JBD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfK-eZ-g3x">
+                        <rect key="frame" x="28" y="8" width="284" height="17.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8s-hG-XOq">
+                        <rect key="frame" x="8" y="29.5" width="304" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Y8s-hG-XOq" secondAttribute="trailing" constant="8" id="3Xz-fH-7kl"/>
+                    <constraint firstItem="CfK-eZ-g3x" firstAttribute="leading" secondItem="eHD-8I-DsV" secondAttribute="trailing" constant="8" id="5mS-07-jnD"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Y8s-hG-XOq" secondAttribute="bottom" constant="8" id="EQz-rk-gnv"/>
+                    <constraint firstItem="eHD-8I-DsV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="b9W-eC-BfP"/>
+                    <constraint firstItem="eHD-8I-DsV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="bi5-VG-iog"/>
+                    <constraint firstItem="Y8s-hG-XOq" firstAttribute="top" secondItem="CfK-eZ-g3x" secondAttribute="bottom" constant="4" id="ivx-3Q-CTN"/>
+                    <constraint firstItem="CfK-eZ-g3x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="kBj-N7-F46"/>
+                    <constraint firstItem="Y8s-hG-XOq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rpd-zj-vEd"/>
+                    <constraint firstAttribute="trailing" secondItem="CfK-eZ-g3x" secondAttribute="trailing" constant="8" id="wJO-of-6z0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDate" destination="Y8s-hG-XOq" id="yzs-15-ZbO"/>
+                <outlet property="lblTitle" destination="CfK-eZ-g3x" id="cUm-uP-xkt"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="94.419642857142847"/>
+        </tableViewCell>
+    </objects>
+</document>
